@@ -1,0 +1,17 @@
+from django.contrib.auth.tokens import PasswordResetTokenGenerator  
+import six
+from django.utils import timezone
+from datetime import datetime, timedelta
+
+class TokenGenerator(PasswordResetTokenGenerator):  
+    def _make_hash_value(self, user, timestamp):  
+        return (  
+            six.text_type(user.pk) + six.text_type(timestamp) +  
+            six.text_type(user.is_active)  
+        )
+    
+    def _now(self):
+        extended_time = datetime.now()
+        return extended_time
+
+account_activation_token = TokenGenerator()

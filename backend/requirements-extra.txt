@@ -1,0 +1,41 @@
+# Django Extensions
+django-anymail==13.0
+django-auditlog==3.0.0
+django-redis==5.4.0
+django-celery-results==2.5.1
+django-colorfield==0.13.0
+
+# Task Queue
+celery==5.4.0
+kombu==5.3.7
+
+# Email
+django-templated-email==3.0.1
+
+# PDF Generation
+WeasyPrint==61.2
+xhtml2pdf==0.2.15
+reportlab==4.0.9
+
+# Utilities
+python-dateutil==2.9.0
+haversine==2.9.0
+geopy==2.4.1
+uszipcode==1.0.0
+
+# Task Queue
+celery>=5.4.0
+
+# Security
+cryptography>=41.0.0
+PyJWT>=2.8.0
+
+# HTTP and API
+requests>=2.31.0
+urllib3>=2.2.1
+
+# Image Processing
+Pillow>=10.0.0
+
+# Utilities
+numpy>=1.26.0
